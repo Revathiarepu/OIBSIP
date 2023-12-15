@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    background-image: url(../images/back.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 10px 10%;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+nav ul li{
+    margin: 10px 15px;
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    color:aquamarine;
+    font-weight: 400;
+    text-decoration: none;
+}
+.contact-btn{
+    color: #bae5f6;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(192, 24, 119);
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.btn{
+    color: #191970;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-image: linear-gradient(35deg, #f297ba, #e38cef);
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.home{
+    max-width: 600px;
+    margin-top: 10%;
+}
+.home h1{
+    color: black;
+    font-size: 70px;
+
+}
+.home p{
+    color: black;
+    margin: 10px 0 30px;   
+    animation-delay: 0.5s;
+}
+.home .btn{
+    font-size: 20px;
+    padding: 15px 80px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    border-radius: 25px;
+}
+.image{
+    width: 280px;
+    bottom: 0;
+    position: absolute;
+    right: 10%;
+    border-radius: 50px;
+}
+.image.animate{
+    animation-delay: 1.5s;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.skills{
+    padding: 30px 0;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.container.skills{
+    color: aquamarine;
+}
+.skills-list div{
+    background: #e448b0;
+    font-size: 13px;
+    padding: 40px;
+    border-right: 10px;
+    border-radius: 10px;
+    font-weight: 300;
+}
+h1{
+    color: rgb(243, 92, 215);
+    font-family: "Gill Sans Extrabold", sans-serif;
+}

@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Robot',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/home.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.logo{
+    width: 63px;
+}
+.menu{
+    width: 63px;
+}
+.nav-bar{
+    display: flex;
+    height: 12%;
+    align-items: center;
+}
+.logo{
+    cursor: pointer;
+    width: 60px;
+}
+.menu{
+    margin-left: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    line-height: 20px;
+}
+button{
+    color: #000;
+    width: 180px;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card{
+    width: 200px;
+    display:inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(../images/one.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(../images/one.jpg);
+    height: 280px;
+}
+
+.card2{
+    height: 280px;
+    background-image: url(../images/two.jpg);
+}
+.card3{
+    height: 280px;
+    background-image: url(../images/three.jpg);
+}
+.card4{
+    height: 280px;
+    background-image: url(../images/four.jpeg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h4{
+    color: #ef4343;
+    text-shadow: 0 0 9px #999;
+}
